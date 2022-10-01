@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    
+    <meta charset="UTF-8">
+    <meta discription="Hanoi tower Visualisation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Hanoi Tower Visualisation</title>
+
+  </head>
+
+  <body>
+    
+    <div id="bar">
+      <a href="#contect">Contact</a>
+      <a href="#about">About</a>
+      <a href="#animate">Animate</a>
+      <a href="#home">Home</a>
+    </div>
+
+    <div id="home">
+
+      <h2>Hanoi Tower Visualisation</h2>
+  
+      <h2 id="question">What is Tower of Hanoi?</h2>
+      <ul id="answer">
+        <li>It's a mathematical puzzle</li>
+        <li>Invented by french mathematician <em>Edouard Lucas </em>in 1883 </li>
+        <li>It's a stack of discks of different sizes</li>
+      </ul>
+
+      <div id="imageDiv">
+        <img src="Tower-of-hanoi.gif" alt="Tower of hanoi" id="image" width=450px heigh=300px >
+      </div>
+
+      <h2 id="question">What this puzzle is about?</h2>
+      <ul id="answer">
+        <li>We have three poles and some disks</li>
+        <li>All disks are initially arranged in ascending order in a pole</li>
+        <li>Problem is to move all disks to another pole</li>
+      </ul>
+
+      <h2 id="question">What rules should be followed?</h2>
+      <ul id="answer">
+        <li>Only one disk can be moved at a time</li>
+        <li>Bigger disk cannot be placed on smaller one</li>
+        <li>We need to find minimum number of moves to do so</li>
+      </ul> 
+   
+    </div> 
+
+     <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div id="animate">
+
+      <h3 style="margin-left: 25%; color:gray;">Here I have made a programme that solves this puzzle and animate every move</h3>
+      <h3 style="margin-left: 43%; color:gray;">Follow these steps</h3>
+       
+      <div>
+        <h3 id="mid">Give the input as number of disks</h3>
+        <h3 id="mid">Also set the animation speed at which you want to run this animation</h3>
+        <h3 id="mid">Now press the Start button</h3>
+        <h3 id="mid">Press Reset before you give another input</h3>
+        <h3 id="mid">here it is :)</h3>
+      </div>
+
+      <svg > 
+        <rect x="170px" y="160px"  rx="12px" ry="12px"   width="60px"  height="25px" id="disk10" />
+        <rect x="160px" y="180px"  rx="12px" ry="12px"   width="80px"  height="25px" id="disk9" />
+        <rect x="150px" y="200px"  rx="12px" ry="12px"   width="100px" height="25px" id="disk8" />
+        <rect x="140px" y="220px"  rx="12px" ry="12px"   width="120px" height="25px" id="disk7" />
+        <rect x="130px" y="240px"  rx="12px" ry="12px"   width="140px" height="25px" id="disk6" />
+        <rect x="120px" y="260px"  rx="12px" ry="12px"   width="160px" height="25px" id="disk5" />
+        <rect x="110px" y="280px"  rx="12px" ry="12px"   width="180px" height="25px" id="disk4" />
+        <rect x="100px" y="300px"  rx="12px" ry="12px"   width="200px" height="25px" id="disk3" />
+        <rect x="90px"  y="320px"  rx="12px" ry="12px"   width="220px" height="25px" id="disk2" />
+        <rect x="80px"  y="340px"  rx="12px" ry="12px"   width="240px" height="25px" id="disk1" />
+
+        <rect x="70px" y="360px" width="260px" height="20px"  id="baseDisk1" />
+        <rect x="400px" y="360px" width="260px" height="20px"  id="baseDisk2" />
+        <rect x="730px" y="360px" width="260px" height="20px"  id="baseDisk3" />
+
+        
+        Sorry, your browser does not support inline SVG.
+      </svg>
+ 
+
+      <form>
+        <lable for="no_disks">No of disks:</lable>
+        <input type="number" id="no_disks" name="no_disks" value="10">
+
+        <lable for="anime_speed">Animation speed:</lable>
+        <input type="number" id="anime_speed" name="anime_speed" value="1"></br></br>
+
+        <button id="start" type="button" onclick= "make_hidden()" >Start</button>
+        <button id="reset" type="button" onclick= "history.go(0)" >Reset</button></br></br>
+        
+        <lable for="moves">No of moves:</lable>
+        <input type="number" id="moves" name="moves" value="0">
+      </form>
+       
+    </div>
+
+    <div id="about">
+      <p>Hii it's me, <em>Rahul kumar</em>, developer of this website</p>
+      <p>I am undergraduate at IIT KANPUR (2022)</p>
+      <P> And it's my first project in frontend web dovelopment</P>
+    </div>
+
+
+    <div id="contect">
+      <p>My mail:<link>1999rhlkmr@gmail.com</p></br>
+      <a href="https://www.linkedin.com/in/rahul-kumar-sablaniya-2ab9b017b" target="_blank">
+        <span class="fa-stack fa-lg" id="icon">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+
+      <a href="https://www.facebook.com/rahulkumar.sablaniya" target="_blank">
+        <span class="fa-stack fa-lg" id="icon">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+
+      <a href="https://github.com/rahulkumar9460" target="_blank">
+        <span class="fa-stack fa-lg" id="icon">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </div>
+
+    <footer id="footer">
+      <h3>Thanks for visiting this site</h3>
+    </footer>
+    
+  </body>
+</html>

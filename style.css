@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  body {
+    background-color: rgb(24, 22, 24);
+    color: white;
+    margin: 2px;
+  }
+  
+  #bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color:rgb(0, 0, 0);
+    font-size: 20px;
+    border-left: 4px solid rgb(187, 49, 39);
+  }
+  
+  #bar a {
+    float: right;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color:rgb(221, 82, 106);
+  }
+  
+  a:active {
+    background-color: rgb(55, 116, 110);
+  }
+  
+  h2 {
+    color: rgb(168, 88, 156);
+    padding: 12px 12px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+  } 
+  
+  #question {
+    background-color:rgb(64, 155, 161);
+    border: 1px solid rgb(60, 94, 139);
+    border-radius: 25px;
+    margin-left: 55px;
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+    max-width: 500px;
+    display: block;
+  }
+  
+  #mid {
+    background-color:rgb(64, 155, 161);
+    border: 2px solid rgb(76, 100, 145);
+    border-radius: 22px;
+    color: black;
+    padding: 7px;
+    text-align: center;
+    max-width: 700px;
+    display: block;
+    margin-left:25%;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  
+  #answer {
+    margin: 20px 20px 20px 90px;
+    color:gray;
+  }
+  
+  #answer li {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 15px 15px;
+  }
+  
+  #image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid blue;
+  }
+  
+  #imageDiv {
+    width: 40%;
+    float: right;
+  }
+  
+  
+  #home {
+    background-color:rgb(14, 13, 14);
+    padding: 16px 12px 20px 12px;
+  }
+  
+  #animate {
+    background-color:rgb(14, 13, 14);
+    margin-top: 20px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  
+  svg {
+    width: 1200px;
+    height: 500px;
+    border: 2px solid skyblue;
+    padding: 20px 15px;
+    align-self: center;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top:5%;
+    
+  }
+  
+  #disk1  {fill: rgb(146, 199, 39);  visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk2  {fill: rgb(201, 133, 121); visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk3  {fill: rgb(12, 98, 209);   visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk4  {fill: rgb(222, 16, 230);  visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk5  {fill: rgb(17, 218, 207);  visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk6  {fill: rgb(240, 227, 47);  visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk7  {fill: rgb(248, 6, 6);     visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk8  {fill: rgb(147, 142, 252); visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk9  {fill: rgb(163, 136, 110); visibility: visible; stroke: white; stroke-width: 2px;}
+  #disk10 {fill: rgb(243, 194, 243); visibility: visible; stroke: white; stroke-width: 2px;}
+  
+  #baseDisk1,#baseDisk2,#baseDisk3 {fill:white; visibility: visible; stroke: rgb(21, 134, 199); stroke-width: 4px;}
+  
+  
+  form {
+    margin: 20px 40px 10px 40px;
+    text-align: center;
+  }
+  
+  lable {
+    margin-left: 10px;
+  }
+  
+  #no_disks, #anime_speed, #start, #reset,#moves {
+    border: 4px solid rgb(73, 168, 206);
+    max-width: 100px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  #start, #reset {
+    background-color:rgb(206, 73, 55);
+    width: 80px;
+    color: white;
+  }
+  
+  #contect {
+    background-color:black;
+    padding: 20px;
+    max-height:500px;
+    text-align: center;
+    color: gray;
+  }
+  
+  #about {
+    background-color: rgb(46, 146, 146);
+    text-align: center;
+    padding: 20px;
+    color:white;
+  }
+  
+  #icon {
+    color: rgb(54, 166, 194);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #footer {
+    background-color: rgb(46, 146, 146);
+    height: 100px;
+    max-width: 100%;
+    color:white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  
+  
+  
